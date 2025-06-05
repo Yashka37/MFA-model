@@ -1,11 +1,11 @@
 <?php
 session_start();
-header('Content-Type: application/json');
+header('Content-Type: text/plain');
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
 
 try {
     if (empty($_GET['qt'])) {
-        throw new Exception("QR-òîêåí íå ïîëó÷åí");
+        throw new Exception("QR-Ã²Ã®ÃªÃ¥Ã­ Ã­Ã¥ Ã¯Ã®Ã«Ã³Ã·Ã¥Ã­");
     }
 
     $conn = new mysqli("localhost", "root", "xxXX1234", "resourses");
