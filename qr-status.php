@@ -56,7 +56,7 @@ try {
         if (file_exists($path)) {
             unlink($path);
         }
-        $conn->query("DELETE FROM qr_tokens WHERE token = '".$conn->real_escape_string($token)."'");
+        //$conn->query("DELETE FROM qr_tokens WHERE token = '".$conn->real_escape_string($token)."'");
             
         echo 'confirmed';
     } else {
