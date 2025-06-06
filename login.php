@@ -1,4 +1,7 @@
 <?php
+header("Content-Security-Policy: default-src 'self';
+        img-src 'self'; script-src 'self'; object-src 'none';
+        base-uri 'none'; frame-ancestors 'none';");
 session_start();
 //error_reporting(E_ALL); //ini_set('display_errors', 1);
 
